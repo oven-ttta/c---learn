@@ -1,3 +1,4 @@
+/* LANG : C++ */
 #include <iostream>
 #include <cmath> 
 #include <iomanip> 
