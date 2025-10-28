@@ -9,6 +9,7 @@ int main() {
 
     float r, sqArea, crArea, area;
 
+    cout << "Enter radius (r): ";
     cin >> r;
 
     sqArea = (2 * r) * (2 * r);
