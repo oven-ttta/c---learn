@@ -1,3 +1,2 @@
-/main1.exe
-/main2.exe
-/main3.exe
+# Ignore Windows executables only in the repository root
+/*.exe
