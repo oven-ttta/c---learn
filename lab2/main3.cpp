@@ -8,7 +8,7 @@ int main() {
     int num;
     int a, b, c, d;
 
-    cout << "Enter a 4-digit number: ";
+    cout << "";
     cin >> num; 
 
     a = num / 1000; 
@@ -18,7 +18,7 @@ int main() {
 
     int sum = a + b + c + d;
 
-    cout << a << "+" << b << "+" << c << "+" << d << "=" << sum << endl;
+    cout << a << "+" << b << "+" << c << "+" << d << " = " << sum << endl;
 
     return 0;
 }
