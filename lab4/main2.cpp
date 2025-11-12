@@ -1,28 +1,36 @@
 #include <iostream>
-#include <climits> 
 
-int main() {
-    int n, x; 
-    int sum = 0; 
-    int max = INT_MIN; 
-
-    std::cout << "Enter n: ";
-    std::cin >> n; 
-
-    std::cout << "Enter " << n << " numbers: " << std::endl;
+using namespace std;
+void problem2() {
+    double num1, num2; 
+    char mark;
     
-    for (int i = 0; i < n; ++i) {
-        std::cin >> x;
+    cout << "--- โจทย์ข้อ 2: คำนวณเลข ---" << endl;
+    cout << "ป้อนเลขจำนวนจริงตัวที่ 1: ";
+    cin >> num1;
+    cout << "ป้อนเลขจำนวนจริงตัวที่ 2: ";
+    cin >> num2;
+    cout << "ป้อนเครื่องหมาย (+, -, *, /, >): ";
+    cin >> mark;
 
-        sum = sum + x; 
-
-        if (x > max) {
-            max = x;
-        }
+    switch (mark) {
+        case '+':
+            cout << "ผลลัพธ์: " << num1 + num2 << endl;
+            break;
+        case '-':
+            cout << "ผลลัพธ์: " << num1 - num2 << endl;
+            break;
+        case '*':
+            cout << "ผลลัพธ์: " << num1 * num2 << endl;
+            break;
+        case '/':
+            cout << "ผลลัพธ์: " << num1 / num2 << endl;
+            break;
+        case '>':
+            cout << "ออกจากโปรแกรม" << endl;
+            break;
+        default:
+            cout << "Invalid mark!!" << endl;
+            break;
     }
-
-    std::cout << "Sum = " << sum << std::endl;
-    std::cout << "Max = " << max << std::endl;
-
-    return 0;
 }

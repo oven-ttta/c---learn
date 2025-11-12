@@ -1,22 +1,27 @@
 #include <iostream>
 
-int main() {
-    int row; 
-    char sign; 
+using namespace std;
+void problem1() {
+    char ch;
+    cout << "--- โจทย์ข้อ 1: ตรวจสอบตัวอักษร ---" << endl;
+    cout << "ป้อนอักขระ 1 ตัว: ";
+    cin >> ch;
 
-    std::cout << "Enter number of rows: ";
-    std::cin >> row; 
-    std::cout << "Enter character: ";
-    std::cin >> sign; 
-
-    for (int i = row; i >= 1; --i) {
-        
-        for (int j = 1; j <= i; ++j) {
-            std::cout << sign; 
-        }
-        
-        std::cout << std::endl;
+    switch (ch) {
+        case 'a':
+        case 'e':
+        case 'i':
+        case 'o':
+        case 'u':
+        case 'A':
+        case 'E':
+        case 'I':
+        case 'O':
+        case 'U':
+            cout << "Vowel" << endl;
+            break;
+        default:
+            cout << "Consonant" << endl;
+            break;
     }
-
-    return 0; 
 }

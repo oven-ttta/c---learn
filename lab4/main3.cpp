@@ -1,21 +1,46 @@
 #include <iostream>
 
-int main() {
-    int n; 
+using namespace std;
+void problem3() {
+    int a, b, c;
+    
+    cout << "--- โจทย์ข้อ 3: ตรวจสอบสามเหลี่ยม ---" << endl;
+    cout << "ป้อนความยาวด้านที่ 1 (a): ";
+    cin >> a;
+    cout << "ป้อนความยาวด้านที่ 2 (b): ";
+    cin >> b;
+    cout << "ป้อนความยาวด้านที่ 3 (c): ";
+    cin >> c;
 
-    std::cout << "Enter n (1-20): ";
-    std::cin >> n; 
-
-    for (int i = 1; i <= n; ++i) {
+    if ((a + b > c) && (a + c > b) && (b + c > a)) {
         
-        if (i % 2 == 1) {
-            std::cout << "0";
+        if (a == b && b == c) {
+            cout << "Equilateral" << endl;
+        } else if (a == b || a == c || b == c) {
+            cout << "Isosceles" << endl;
         } else {
-            std::cout << "1";
+            cout << "Scalene" << endl;
         }
-    }
 
-    std::cout << std::endl;
+    } else {
+        cout << "No" << endl;
+    }
+}
+
+int main() {
+    int choice;
+    cout << "เลือกโจทย์ที่ต้องการรัน (1, 2, หรือ 3): ";
+    cin >> choice;
+
+    if (choice == 1) {
+        problem1();
+    } else if (choice == 2) {
+        problem2();
+    } else if (choice == 3) {
+        problem3();
+    } else {
+        cout << "ตัวเลือกไม่ถูกต้อง" << endl;
+    }
 
     return 0;
 }
