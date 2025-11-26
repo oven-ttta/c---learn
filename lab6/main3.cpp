@@ -3,24 +3,27 @@
 using namespace std;
 
 int main() {
-    int n, i, max, min;
+    int n = 0 , i = 0, max=-1, min=100, range;
     
-    max = 10;
-    min = 10;
+   while (i < 10) {
+   	
+   	do {
+   	cin >> n ;
+   } while ((n < 10 && n != 0)||(n > 20));
     
-    for (i = 0; i < 10; i++) {
-        cin >> n;
-        
-        if (n == 0) {
-            break;
-        }
-        
-        if (n > 10 && n < 20) {
-            max++;
-        }
-    }
-    
-    cout << (max - min) << endl;
-    
+   if (n == 0){
+   		break;
+   }
+   if (max < n){
+   		max = n;
+   }
+   if(min > n){
+   min = n;
+   }
+    i++;
+}
+	range = max - min;
+	cout << range;
+	
     return 0;
 }
