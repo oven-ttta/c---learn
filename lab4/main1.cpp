@@ -1,10 +1,9 @@
 #include <iostream>
-
 using namespace std;
-void problem1() {
+
+int main(void) {
     char ch;
-    cout << "--- โจทย์ข้อ 1: ตรวจสอบตัวอักษร ---" << endl;
-    cout << "ป้อนอักขระ 1 ตัว: ";
+    cout << "";
     cin >> ch;
 
     switch (ch) {
@@ -18,8 +17,10 @@ void problem1() {
         case 'I':
         case 'O':
         case 'U':
+        
             cout << "Vowel" << endl;
             break;
+            
         default:
             cout << "Consonant" << endl;
             break;

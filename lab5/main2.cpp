@@ -4,16 +4,13 @@
 using namespace std;
 
 int main() {
-    int n, x;
+    int n, x, i;
     int sum = 0;
     int max = INT_MIN;
 
-    cout << "";
     cin >> n;
-
-    cout << "";
     
-    for (int i = 0; i < n; ++i) {
+    for (i = 0; i < n; ++i) {
         cin >> x;
 
         sum = sum + x;
