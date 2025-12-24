@@ -6,10 +6,8 @@ int main() {
     string name[5][5][5];
     int n, m, p;
 
-    // รับขนาดของ array 3 มิติ
     cin >> n >> m >> p;
 
-    // รับค่า string ใส่ array 3 มิติ
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < m; j++) {
             for (int k = 0; k < p; k++) {
@@ -18,7 +16,6 @@ int main() {
         }
     }
 
-    // แสดงผลแบบแรก - แสดงทีละ element
     cout << "Elements in the matrix:" << endl;
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < m; j++) {
@@ -27,8 +24,7 @@ int main() {
             }
         }
     }
-
-    // แสดงผลแบบที่สอง - แสดงรวมตามมิติแรก
+    cout<< "\n";
     cout << "Elements in the matrix:" << endl;
     for (int i = 0; i < n; i++) {
         cout << "name[" << i << "][][]:";

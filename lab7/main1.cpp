@@ -4,11 +4,8 @@
 using namespace std;
 
 int main() {
-    int n;
-    int num[100];
+    int n, num[100], maxVal = 0, minVal = 1000;
     double sum = 0;
-    int maxVal = 0;
-    int minVal = 1000;
 
     cin >> n;
     for (int i = 0; i < n; i++) {

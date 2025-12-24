@@ -4,12 +4,7 @@
 using namespace std;
 
 int main() {
-    int num[6];
-    int even[6];
-    int odd[6];
-    
-    int e_count = 0;
-    int o_count = 0;
+    int num[6], even[6], odd[6], e_count = 0, o_count = 0;
 
     for (int i = 0; i < 6; i++) {
         cin >> num[i];
